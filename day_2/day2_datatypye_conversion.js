@@ -21,6 +21,7 @@ console.log(typeof converted_s2);
 
 console.log(Number(null)); //0
 console.log(Number(undefined)); //NaN
+console.log(typeof Number(undefined)) //Number
 console.log(Number(false)); //0
 console.log(Number(true)); //1
 
