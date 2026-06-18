@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASYNC 1</title>
+  </head>
+  <body>
+    <h1 id="Heading">Background colour</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+  </body>
+  <script>
+    let fun;
+    let a = 1;
+
+    function Colour() {
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += (Math.floor(Math.random() * 16)).toString(16);
+      }
+      return color;
+    }
+
+    document.querySelector("#start").addEventListener("click", function () {
+        if(fun)
+    {
+        clearInterval(fun);
+    }
+      fun = setInterval(function () {
+        document.querySelector('body').style.backgroundColor = Colour();
+      }, 1000);
+    });
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      console.log("Stppp");
+      clearInterval(fun);
+      fun = null;
+    });
+  </script>
+</html>
