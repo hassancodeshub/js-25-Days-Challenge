@@ -35,6 +35,6 @@ console.log(a1)
 console.log(ar)
 
 
-const a2  = ar.splice(1,3); // Inclusive and doesn't modify the orignal array
+const a2  = ar.splice(1,3); // Inclusive and do modify the orignal array
 console.log(a2)
 console.log(ar)

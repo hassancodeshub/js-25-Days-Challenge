@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <style>
+      .frm,
+      .input {
+        margin: 20px;
+        padding: 10;
+      }
+      body{
+        background-color:rgba(62, 62, 62, 0.773);
+        color : white;
+      }
+      #bmi{
+        border-left: 5px white solid;
+        padding: 10px;
+        margin: 20px;
+        color : black;
+        width: 300px;
+        background-color: rgb(184, 184, 184);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <form>
+      <label for="height" class="frm"> Enter your Height in CM : </label><br />
+      <input type="text" id="height" class="input" /><br />
+      <label for="weight" class="frm"> Enter your Weight in kg : </label><br />
+      <input type="text" id="weight" class="input" /><br />
+      <button id="btn" class="frm">Calculate</button>
+      <div id="bmi">BMI = </div>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
